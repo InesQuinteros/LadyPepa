@@ -6,10 +6,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-       </head>
+        <script src="https://kit.fontawesome.com/5b71b54f22.js" crossorigin="anonymous"></script>
+        <!--        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <script src="validacionesContacto.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    </head>
     <body>
         <header class="sticky">
-        <div class="sticky">
+            <div class="sticky">
             <a href="index.html"><img class="logo" src="/imagenes/LadyPepaCompleto.jpg" alt="logo" width="150"></a>
             </div>
             <a  href="index.html">Inicio</a>
@@ -18,20 +25,25 @@
             <a   href="Contacto.html">Contacto</a>
         </header>
         <div class="row" style="align-self: center;">
-            <h1>ESPERO TU MENSAJE</h1>
+            <div class="col-sm-12" padding="0"><h3>donde estamos...</h3></div>
         </div>
         <div class="row">
                 <div class="col-sm-1" padding="0"></div>
                 <div class="col-sm-5" padding="0">
-                Punto de entrega en ciudad de Cordoba (zona norte)<br><br>
-                ladypepaglutenfree@gmail.com <br>
-                (0351)555-5555<br>
-                +54 9 351 555 5555<br> <br><br>
-                </div>
+                    <h7>Esperamos tu mensaje</h7><br><br>
+                    <i class="fa-regular fa-envelope"></i>
+                    ladypepaglutenfree@gmail.com <br>
+                    <i class="fa-solid fa-phone"></i>
+                    (0351)555-5555<br>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    +54 9 351 555 5555<br> <br><br>
+            </div>
                 <div class="col-sm-5" padding="0">
-                    Seguinos en redes sociales para descubrir más productos y conocer las novedades: <br><br>
-                    @ladypepapasteleria <br>
-                    ladypepapasteleria <br>
+                Seguinos en redes sociales para descubrir más productos y conocer las novedades: <br><br>
+                <i class="fa-brands fa-instagram fa-1x"></i>
+                @ladypepapasteleria <br>
+                <i class="fa-brands fa-facebook"></i>
+                ladypepapasteleria <br>
                 </div>
                 <div class="col-sm-1" padding="0"></div>
             <div class="row">
@@ -39,6 +51,7 @@
                 <div class="col-sm-5" padding="0">
 <!--               <form action="mostrar_datos.html" target="_blank"> al no poner el method, por defecto usa GET-->
                 <form action="https://formspree.io/f/mgeqzbqr" method="POST">
+                    <h7>O completa el formulario y te contactaremos a la brevedad </h7><br>
                     <label for="nombre">Nombre: </label>
                     <input size="30" type="text" name="nombre" placeholder="Ingrese su nombre aqui..." required>
                     <br><br>
@@ -67,18 +80,20 @@
                 </form>
             </div>
             <div class="col-sm-5">
+                Punto de entrega en ciudad de Cordoba (zona norte)<br><br>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d112062.33614713178!2d-64.24230284308688!3d-31.36934422108407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1665346556919!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="col-sm-1" padding="0"></div>
         </div>
         <footer class="footer">
             <h1>seguinos en redes sociales</h1>
-            instagram
-            facebook
-            <i class="fa fa-cloud" style="font-size:32px;"></i>
-            <i class="fa fa-heart" style="font-size:32px;"></i>
+            <a href="#" class="fa fa-whatsapp"></a>
+            <a href="#" class="fa fa-facebook"></a>
+            <i class="material-icons">facebook</i>    
+            <a href="/Imagenes/Facebook.png" title="Facebook"></a>
+            <a href="https://www.instagram.com/ladypepapasteleria/" class="fa fa-instagram" target="Blank"></a>
+
         </footer>
 
     </body>
 </html>
-
