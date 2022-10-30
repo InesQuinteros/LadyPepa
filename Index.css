@@ -405,5 +405,24 @@ ul li a:hover {
 
   }
 
+.noso{
 
+
+    background-color:rgb(249,88,219) ;
+    padding: 5px 10px;
+    color: white;
+}
+
+.imgcocinera {
+    width: 400px;
+    display: block;
+    margin: auto;
+    background-color:rgb(249,88,219) ;
+    border-radius: 50%;
+
+}
+
+#divfondo {
+    background-color:rgb(249,88,219) ;
+}
 
