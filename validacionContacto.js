@@ -1,66 +1,15 @@
-<<<<<<< HEAD
-const btnEnviar = document.getElementById('btn-enviar');
+document.addEventListener("DOMContentLoaded", function() {
+  document.getElementById("formulario").addEventListener('submit', validarFormulario); 
+});
 
-const validación = (e) => {
-  e.preventDefault();
-  const nombreDeUsuario = document.getElementById('nombre');
-  const direcciónEmail = document.getElementById('email');
-  if (isnumber(nombre.value) == true) {
-    alert("Por favor, escribe un nombre valido.");
-    nombre.focus();
-    return false;
-  }
-    
-  if (email.value === "") {
-    alert("Por favor, escribe tu correo electrónico");
-    email.focus();
-    return false;
-  }
+function validarFormulario(evento) {
+  evento.preventDefault();//para q no se envie por ahora
+  var tel = document.getElementById('tel').value;
+  var email = document.getElementById('email').value;
 
-  if (!emailVálido(email.value)) {
-    alert("Por favor, escribe un correo electrónico válidoooooo");
-    emailAddress.focus();
-    return false;
+  if((tel.length == 0) && (email.length == 0)) {
+    alert('No has proporcionado ningun dato de contacto. Deberias brindarnos tu telefono o email');
+    return;
   }
-  
-  return true; //Se pueden enviar los datos del formulario al servidor
+  this.submit();
 }
-
-const emailVálido = email => {
-  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-}
-
-=======
-const btnEnviar = document.getElementById('btn-enviar');
-
-const validación = (e) => {
-  e.preventDefault();
-  const nombreDeUsuario = document.getElementById('nombre');
-  const direcciónEmail = document.getElementById('email');
-  if (isnumber(nombre.value) == true) {
-    alert("Por favor, escribe un nombre valido.");
-    nombre.focus();
-    return false;
-  }
-    
-  if (email.value === "") {
-    alert("Por favor, escribe tu correo electrónico");
-    email.focus();
-    return false;
-  }
-
-  if (!emailVálido(email.value)) {
-    alert("Por favor, escribe un correo electrónico válidoooooo");
-    emailAddress.focus();
-    return false;
-  }
-  
-  return true; //Se pueden enviar los datos del formulario al servidor
-}
-
-const emailVálido = email => {
-  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-}
-
->>>>>>> fc2fbae1eac7713dc98aa20f25687fe5a7ce4d92
-submitBtn.addEventListener('click', validate);
