@@ -481,3 +481,7 @@ ul li a:hover {
 	grid-column-end: 5;
 }
 */
+
+#fondodiv {
+    background-color: rgb(245, 180, 219);
+}
