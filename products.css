@@ -483,5 +483,9 @@ ul li a:hover {
 */
 
 #fondodiv {
+<<<<<<< HEAD
+    background-color: rgb(249,88,219);
+=======
     background-color:rgb(249,88,219);
+>>>>>>> d5881c07d53f0c6982f5885077437dda9034779c
 }
